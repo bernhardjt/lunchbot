@@ -7,8 +7,8 @@ from src.utils.date_util import to_date
 
 MAIN = 4
 
-ui_url = 'http://leonardi.webspeiseplan.de/Menu'
-api_url = 'http://leonardi.webspeiseplan.de/index.php?token=1b5a8259d1c8b53ce87c5720adab9e4b&model=menu&location=2100&languagetype=1&_=1513876707612'
+ui_url = 'https://leonardi.webspeiseplan.de/Menu'
+api_url = 'https://leonardi.webspeiseplan.de/index.php?token=1b5a8259d1c8b53ce87c5720adab9e4b&model=menu&location=2100&languagetype=1&_=1513876707612'
 
 
 def food_menu_applies_today(provider):
