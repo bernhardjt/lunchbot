@@ -8,7 +8,7 @@ from src.utils.date_util import to_date
 MAIN = 4
 
 ui_url = 'http://leonardi.webspeiseplan.de/Menu'
-api_url = 'http://leonardi.webspeiseplan.de/index.php?token=d38436e0839755e6cde59cbda0fff016&model=menu&location=2100&languagetype=1&_=1513876707612'
+api_url = 'http://leonardi.webspeiseplan.de/index.php?token=1b5a8259d1c8b53ce87c5720adab9e4b&model=menu&location=2100&languagetype=1&_=1513876707612'
 
 
 def food_menu_applies_today(provider):
@@ -20,7 +20,10 @@ def get_lunch_for_date(date=datetime.now(), show_only_current_day=True):
     try:
         res = requests.get(
             api_url,
-            headers={'User-agent': 'crawler'}
+            headers={
+                'User-agent': 'crawler',
+                'Referer': ui_url
+            }
         )
 
         dishes = []
