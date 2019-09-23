@@ -42,7 +42,7 @@
     $scope.getData = () => {
       const queryparams = $location.search();
       queryparams.json = true;
-      $http.get('https://http://lunch.p7s1.io/api', { params: queryparams }).then((data, status) => {
+      $http.get('https://lunch.p7s1.io/api', { params: queryparams }).then((data, status) => {
         $scope.data = data.data;
         console.log($scope.data)
       }, (data, status) => {
