@@ -7,7 +7,7 @@ custom:
   pythonRequirements:
     dockerizePip: true
   customDomain:
-    domainName: lunch.markusziller.de
+    domainName: lunch.p7s1.ip
     basePath: ''
     stage: ${self:provider.stage}
 
